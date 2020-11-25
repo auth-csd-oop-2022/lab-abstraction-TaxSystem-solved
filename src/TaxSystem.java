@@ -36,7 +36,12 @@ public class TaxSystem {
     public void addHouse(House house){
         houses.add(house);
     }
-
+    
+    /** 
+    * Υπολογίζει και επιστρέφει μια λίστα με τoυς τελικούς φόρους για κάθε αυτοκίνητο
+    * Computes and returns a list with the final taxes for each car
+    *
+    */
     public ArrayList<Double> getCarTaxes(){
         ArrayList<Double> carTaxes = new ArrayList<>();
         for (Car car : this.cars) {
@@ -44,7 +49,12 @@ public class TaxSystem {
         }
         return carTaxes;
     }
-
+    
+    /** 
+    * Υπολογίζει και επιστρέφει μια λίστα με τoυς τελικούς φόρους για κάθε σπίτι
+    * Computes and returns a list with the final taxes for each house
+    *
+    */
     public ArrayList<Double> geHouseTaxes(){
         ArrayList<Double> houseTaxes = new ArrayList<>();
         for (House house : this.houses) {
@@ -53,7 +63,10 @@ public class TaxSystem {
         return houseTaxes;
     }
 
-
+    /**
+    * Υπολογίζει και επιστρέφει το συνολικό πόσο όλων των φόρων (και για τα αυτοκίνητα και για τα σπίτια).
+    * Computes and returns the total amount of taxes (for both the cars and the houses)
+    */
     public double getTotalTaxes(){
         double total = 0;
         for (Double carTaxes : this.getCarTaxes()) {
