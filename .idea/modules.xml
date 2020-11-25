@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/lab-template.iml" filepath="$PROJECT_DIR$/lab-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab-abstraction-tax_system_solved.iml" filepath="$PROJECT_DIR$/lab-abstraction-tax_system_solved.iml" />
     </modules>
   </component>
 </project>
